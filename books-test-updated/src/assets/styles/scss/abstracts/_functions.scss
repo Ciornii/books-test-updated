@@ -1,0 +1,28 @@
+/**
+ * Functions
+ */
+
+// ------------------------------------------------------- From px to rem
+// calculateRem($size) 
+
+// ------------------------------------------------------- Half-numbers
+// width: $element-width;
+// height: h($element-width);
+
+
+// ------------------------------------------------------- From px to rem
+@function calculateRem($size) {
+   $remSize: $size / 16px;
+   @return $remSize * 1rem;
+}
+
+
+// ------------------------------------------------------- Half-numbers
+@function h($num) {
+   @return $num / 2;
+}
+
+// .example {
+//    width: $element-width;
+//    height: h($element-width);
+// }
